@@ -19,11 +19,12 @@ Now we get
 
 This is what <code>d5</code> does. <code>fact</code> is the fixpoint of <code>d5</code>.
 
-Notie that 
+Notice that 
 
 <code> fact m = (\f\n. if n>0 then n * f(n-1) else 1)fact m</code> for any m.
 
 Can we write a decorator that fixes any function with a fixpoint? That's the combinator <code>Y</code>.
+More on that later.
 
 enjoy.
 -cem bozsahin
