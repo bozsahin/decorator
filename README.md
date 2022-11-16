@@ -1,5 +1,6 @@
 # decorator
-Python decorators, from functions with some arguments, to composition, decorators with args and fixpoint
+Python decorators, from functions with some arguments (d1), to composition (d2, d2), decorators with args (d4),
+and fixpoint decorators (d5).
 
 To use, just do in python (>= 3.8) 
 
