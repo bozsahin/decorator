@@ -74,7 +74,7 @@ def f5(n):
 # these are equivalent to e,g, f4=d4(7,f4)
 #  try f4(7) and f5(7)
 
-# fact is the fixpoint of the factorial, because fact=d5(fact)
+# fact is the fixpoint of the d5, because fact=d5(fact)
 def d5(f):
     def inn(n):
         if n > 0:
@@ -90,7 +90,14 @@ def fact(n):
     else:
         return 1
 
-# Try e.g. fact(6) with and without d5. (You'd need to eliminate d5 code and its use for the last one).
+# Try e.g. fact(6) with d5 and fact2(6) and without d5. 
+
+def fact2(n):
+    if n > 0:
+        return n * fact2(n-1)
+    else:
+        return 1
+
 
 # The following will give syntax errors if uncommented. 
 # Decorators work on named functions
