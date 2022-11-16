@@ -15,10 +15,11 @@ We can abstract over the RHS:
 
 Now we get
 
-
 <code> fact= (\f\n. if n>0 then n * f(n-1) else 1)fact</code>
 
-This is what <code>d5</code> does.
+This is what <code>d5</code> does. <code>fact</code> is the fixpoint of <code>d5</code>.
+
+Can we write a decorator that fixes any function with a fixpoint? That's the combinator <code>Y</code>.
 
 enjoy.
 -cem bozsahin
