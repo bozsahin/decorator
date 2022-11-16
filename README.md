@@ -12,7 +12,7 @@ We can define factorial as a recursive function:
 
 <code>fact = \n. if n>0 then n * fact(n-1) else 1</code>
 
-We can abstract over the RHS:
+We can abstract over the righthand side to avoid names in lambda-calculus.
 
 <code> \f\n. if n>0 then n * f(n-1) else 1</code>
 
