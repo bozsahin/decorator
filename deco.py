@@ -55,10 +55,10 @@ def k32():
 #   or negation with squaring.
 
 # d4 is an example of a decorator with an argument. 
-def d4(n):
+def d4(k):
     def inn(f):
         def inn2(arg):
-            return n * f(arg) 
+            return k * f(arg) 
         return inn2
     return inn
 
