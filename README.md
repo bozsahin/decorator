@@ -1,6 +1,7 @@
 # decorator
-Python decorators, from functions with some arguments (d1), to composition (d2, d3), decorators with args (d4),
-and fixpoint decorators (d5).
+
+#Python decorators, from functions with some arguments (d1), to function composition  by decorators(d2, d3), 
+# decorators with args (d4), and fixpoint decorators (d5).
 
 To use, just do in python (>= 3.8):
 
@@ -30,7 +31,7 @@ Notice that
 
 therefore the equation (1) holds.
 
-Can we write a decorator that fixes any function with a fixpoint? That's the combinator <code>Y</code>.
+Can we write a decorator that fixes any function with a fixpoint? That's the combinator <code>Y.</code>
 More on that later.
 
 enjoy.

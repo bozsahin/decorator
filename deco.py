@@ -28,7 +28,7 @@ def g(x,y,z):
 
 # try fun calls such as f(), h(2,3), g(4,5,7)
 
-# these are decorators d2 and d3, for chaining, i.e. composition
+# these are the decorators d2 and d3, for chaining, i.e. composition
 def d2(f):
     def inn():
         v=f()
@@ -74,7 +74,7 @@ def f5(n):
 # these are equivalent to e,g, f4=d4(7,f4)
 #  try f4(7) and f5(7)
 
-# fact is the fixpoint of the d5, because fact=d5(fact)
+# fact is the fixpoint of decorator d5, because fact=d5(fact)
 def d5(f):
     def inn(n):
         if n > 0:
@@ -90,7 +90,8 @@ def fact(n):
     else:
         return 1
 
-# Try e.g. fact(6) with d5 and fact2(6) and without d5. 
+# Try e.g. fact(6) which is decorated by d5, and fact2(6), which is not.
+# you should see the same result. Now look at the types of fact and fact2.
 
 def fact2(n):
     if n > 0:
